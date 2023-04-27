@@ -1,0 +1,22 @@
+._container_Nabvar {
+  border-bottom: solid 0.1px #fff;
+  height: 50px;
+
+  ._search {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 20px 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  input {
+    display: flex;
+    width: 550px;
+    border-radius: 20px;
+    border: none;
+    height: 3vh;
+    align-items: center;
+    justify-content: center;
+  }
+}
