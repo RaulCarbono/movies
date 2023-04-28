@@ -32,7 +32,9 @@ export const Movies = () => {
               <h3>{movie.title}</h3>
               <img src={movie.image} alt="" />
               <p>{movie.year}</p>
-              <span>{movie.description}</span>
+              <div
+                dangerouslySetInnerHTML={{ __html: movie.description }}
+              ></div>
             </div>
           </>
         ))}
