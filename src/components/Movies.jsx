@@ -33,7 +33,12 @@ export const Movies = () => {
               <img src={movie.image} alt="" />
               <p>{movie.year}</p>
               <div
-                dangerouslySetInnerHTML={{ __html: movie.description }}
+                dangerouslySetInnerHTML={{
+                  __html: `${movie.description
+                    .split(" ")
+                    .slice(0, 50)
+                    .join(" ")}...`,
+                }}
               ></div>
             </div>
           </>

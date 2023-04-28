@@ -1,7 +1,7 @@
 ._container_Nabvar {
   border-bottom: solid 0.1px #fff;
   display: flex;
-  
+
   ._search {
     margin-top: 0px;
     display: grid;
@@ -10,14 +10,10 @@
     font-size: 20px;
     align-items: center;
     justify-content: center;
-
-    i{
-      margin-right: 20px;
-    }
   }
   input {
     display: flex;
-    width: 550px;
+    width: 350px;
     border-radius: 20px;
     border: none;
     height: 35px;
@@ -27,11 +23,16 @@
     letter-spacing: normal;
     text-align: center;
   }
-  
+
   .btn {
     background-color: transparent;
     border: none;
     color: #fff;
   }
-
+}
+._title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
