@@ -8,7 +8,6 @@
   gap: 25px;
 
   ._card_movie {
-    
     align-items: center;
     justify-content: center;
     margin-top: 20px;
@@ -16,6 +15,7 @@
     box-shadow: rgba(17, 0, 37, 0.363) 0px 0.0625em 0.0625em,
       rgba(51, 0, 71, 0.575) 0px 0.125em 0.5em,
       rgba(13, 1, 63, 0.384) 0px 0px 0px 1px inset;
+    transition: transform 0.2s;
   }
 
   img {
@@ -26,4 +26,8 @@
   h3 {
     font-size: 15px;
   }
+}
+
+._card_movie:hover {
+  transform: scale(1.08);
 }
