@@ -1,22 +1,37 @@
 ._container_Nabvar {
   border-bottom: solid 0.1px #fff;
-  height: 50px;
-
+  display: flex;
+  
   ._search {
-    margin-top: 10px;
+    margin-top: 0px;
     display: grid;
-    grid-template-columns: 20px 80px;
+    grid-template-columns: 30px 70px;
     width: 100%;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
+
+    i{
+      margin-right: 20px;
+    }
   }
   input {
     display: flex;
     width: 550px;
     border-radius: 20px;
     border: none;
-    height: 3vh;
+    height: 35px;
     align-items: center;
     justify-content: center;
+    writing-mode: horizontal-tb;
+    letter-spacing: normal;
+    text-align: center;
   }
+  
+  .btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+  }
+
 }

@@ -1,9 +1,15 @@
-const getAllMovies = async () => {
-  const url = fetch("https://www.omdbapi.com/?i=tt3896198&apikey=7336b4ac");
-  const rest = await fetch(url);
-  const data = await rest.json();
-
-  console.log(data);
-};
-
-getAllMovies();
+export const getAllMovies = async () => {
+  const url = 'https://api.tvmaze.com/shows'
+  const resp = await fetch(url)
+  const data = await resp.json()
+  
+  const movies = data.map(movie => ({
+    id: movie.id,
+    title: movie.name,
+    image: movie.image.medium,
+    rating: movie.rating.average,
+    year: movie.premiered,
+  }))
+  
+  return movies
+  }
